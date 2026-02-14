@@ -61,7 +61,7 @@ def register(username, password):
         return False
     
     new_row = pd.DataFrame([{
-        "account_num":generate_account_number,
+        "account_num":generate_account_number(),
         "username":username,
         "password":hash_pass(password),
         "balance":0,
